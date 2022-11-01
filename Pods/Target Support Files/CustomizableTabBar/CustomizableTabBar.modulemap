@@ -1,0 +1,6 @@
+framework module CustomizableTabBar {
+  umbrella header "CustomizableTabBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

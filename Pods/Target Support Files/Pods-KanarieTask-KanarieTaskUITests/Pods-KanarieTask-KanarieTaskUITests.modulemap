@@ -1,0 +1,6 @@
+framework module Pods_KanarieTask_KanarieTaskUITests {
+  umbrella header "Pods-KanarieTask-KanarieTaskUITests-umbrella.h"
+
+  export *
+  module * { export * }
+}

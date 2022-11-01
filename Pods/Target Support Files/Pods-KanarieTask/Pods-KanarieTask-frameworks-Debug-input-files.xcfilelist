@@ -1,0 +1,4 @@
+${PODS_ROOT}/Target Support Files/Pods-KanarieTask/Pods-KanarieTask-frameworks.sh
+${BUILT_PRODUCTS_DIR}/Charts/Charts.framework
+${BUILT_PRODUCTS_DIR}/CustomizableTabBar/CustomizableTabBar.framework
+${BUILT_PRODUCTS_DIR}/SwiftAlgorithms/Algorithms.framework

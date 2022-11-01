@@ -1,0 +1,900 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		5C0BCB4526C596ED767F6953 /* Pods_KanarieTask.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BF0BB327D8A835A1DB683128 /* Pods_KanarieTask.framework */; };
+		792CF5D2290AB84400DFEF8E /* URLSessionHTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF5D1290AB84400DFEF8E /* URLSessionHTTPClient.swift */; };
+		792CF5DA290AB86200DFEF8E /* URLSessionHTTPClientError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF5D9290AB86200DFEF8E /* URLSessionHTTPClientError.swift */; };
+		792CF5E0290AB8E700DFEF8E /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF5DF290AB8E700DFEF8E /* HTTPClient.swift */; };
+		792CF5E5290AC21F00DFEF8E /* KanarieEnergyData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF5E4290AC21F00DFEF8E /* KanarieEnergyData.swift */; };
+		792CF5F3290AC25800DFEF8E /* KanarieEnergyDTO.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF5F2290AC25800DFEF8E /* KanarieEnergyDTO.swift */; };
+		792CF5F9290AC29900DFEF8E /* KanarieEnergyError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF5F8290AC29900DFEF8E /* KanarieEnergyError.swift */; };
+		792CF601290AC36500DFEF8E /* KanarieEnergyRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF600290AC36500DFEF8E /* KanarieEnergyRepository.swift */; };
+		792CF613290AC51600DFEF8E /* Environment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF612290AC51600DFEF8E /* Environment.swift */; };
+		792CF61B290AC53600DFEF8E /* KanarieEnergyEnvironment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF61A290AC53600DFEF8E /* KanarieEnergyEnvironment.swift */; };
+		792CF621290AC55500DFEF8E /* KanarieEnergyAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF620290AC55500DFEF8E /* KanarieEnergyAPI.swift */; };
+		792CF629290AC58700DFEF8E /* KanarieEnergyAPI+MappingExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF628290AC58700DFEF8E /* KanarieEnergyAPI+MappingExtension.swift */; };
+		792CF62E290AC5B200DFEF8E /* KanarieEnergyAPI+EnvironmenInstancesExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF62D290AC5B200DFEF8E /* KanarieEnergyAPI+EnvironmenInstancesExtension.swift */; };
+		792CF633290AC7AD00DFEF8E /* KanarieEnergyRemoteRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF632290AC7AD00DFEF8E /* KanarieEnergyRemoteRepository.swift */; };
+		792CF638290ACA0900DFEF8E /* KanarieEnergyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 792CF637290ACA0900DFEF8E /* KanarieEnergyViewModel.swift */; };
+		795464FC29092DD7006FC0FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795464FB29092DD7006FC0FD /* AppDelegate.swift */; };
+		795464FE29092DD7006FC0FD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795464FD29092DD7006FC0FD /* SceneDelegate.swift */; };
+		7954650029092DD7006FC0FD /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 795464FF29092DD7006FC0FD /* ViewController.swift */; };
+		7954650329092DD7006FC0FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7954650129092DD7006FC0FD /* Main.storyboard */; };
+		7954650529092DDA006FC0FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7954650429092DDA006FC0FD /* Assets.xcassets */; };
+		7954650829092DDA006FC0FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7954650629092DDA006FC0FD /* LaunchScreen.storyboard */; };
+		7954651329092DDA006FC0FD /* KanarieTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954651229092DDA006FC0FD /* KanarieTaskTests.swift */; };
+		7954651E29092DDB006FC0FD /* KanarieTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954651D29092DDB006FC0FD /* KanarieTaskUITests.swift */; };
+		7954652F29092E62006FC0FD /* CustomTabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954652E29092E62006FC0FD /* CustomTabBarVC.swift */; };
+		7954653929092FB7006FC0FD /* CustomSegmentedControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954653829092FB7006FC0FD /* CustomSegmentedControl.swift */; };
+		7954654129093475006FC0FD /* TabBarVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7954654029093475006FC0FD /* TabBarVC.swift */; };
+		E2A5B6C342AB276C2225912F /* Pods_KanarieTaskTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 335DD0AA13485BFFA20F0BE3 /* Pods_KanarieTaskTests.framework */; };
+		F62D580F62F0720470F15070 /* Pods_KanarieTask_KanarieTaskUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 99F1A6FA2C63360109D9E01A /* Pods_KanarieTask_KanarieTaskUITests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		7954650F29092DDA006FC0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 795464F029092DD7006FC0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 795464F729092DD7006FC0FD;
+			remoteInfo = KanarieTask;
+		};
+		7954651A29092DDB006FC0FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 795464F029092DD7006FC0FD /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 795464F729092DD7006FC0FD;
+			remoteInfo = KanarieTask;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1A8D3F76E0030E8452AFABB1 /* Pods-KanarieTaskTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanarieTaskTests.release.xcconfig"; path = "Target Support Files/Pods-KanarieTaskTests/Pods-KanarieTaskTests.release.xcconfig"; sourceTree = "<group>"; };
+		215413BA37E2EABC29270F66 /* Pods-KanarieTask-KanarieTaskUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanarieTask-KanarieTaskUITests.debug.xcconfig"; path = "Target Support Files/Pods-KanarieTask-KanarieTaskUITests/Pods-KanarieTask-KanarieTaskUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		335DD0AA13485BFFA20F0BE3 /* Pods_KanarieTaskTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KanarieTaskTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		786233D9D105C041F9103C44 /* Pods-KanarieTask.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanarieTask.debug.xcconfig"; path = "Target Support Files/Pods-KanarieTask/Pods-KanarieTask.debug.xcconfig"; sourceTree = "<group>"; };
+		792CF5D1290AB84400DFEF8E /* URLSessionHTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClient.swift; sourceTree = "<group>"; };
+		792CF5D9290AB86200DFEF8E /* URLSessionHTTPClientError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionHTTPClientError.swift; sourceTree = "<group>"; };
+		792CF5DF290AB8E700DFEF8E /* HTTPClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
+		792CF5E4290AC21F00DFEF8E /* KanarieEnergyData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanarieEnergyData.swift; sourceTree = "<group>"; };
+		792CF5F2290AC25800DFEF8E /* KanarieEnergyDTO.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanarieEnergyDTO.swift; sourceTree = "<group>"; };
+		792CF5F8290AC29900DFEF8E /* KanarieEnergyError.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanarieEnergyError.swift; sourceTree = "<group>"; };
+		792CF600290AC36500DFEF8E /* KanarieEnergyRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanarieEnergyRepository.swift; sourceTree = "<group>"; };
+		792CF612290AC51600DFEF8E /* Environment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Environment.swift; sourceTree = "<group>"; };
+		792CF61A290AC53600DFEF8E /* KanarieEnergyEnvironment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanarieEnergyEnvironment.swift; sourceTree = "<group>"; };
+		792CF620290AC55500DFEF8E /* KanarieEnergyAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanarieEnergyAPI.swift; sourceTree = "<group>"; };
+		792CF628290AC58700DFEF8E /* KanarieEnergyAPI+MappingExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KanarieEnergyAPI+MappingExtension.swift"; sourceTree = "<group>"; };
+		792CF62D290AC5B200DFEF8E /* KanarieEnergyAPI+EnvironmenInstancesExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "KanarieEnergyAPI+EnvironmenInstancesExtension.swift"; sourceTree = "<group>"; };
+		792CF632290AC7AD00DFEF8E /* KanarieEnergyRemoteRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanarieEnergyRemoteRepository.swift; sourceTree = "<group>"; };
+		792CF637290ACA0900DFEF8E /* KanarieEnergyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanarieEnergyViewModel.swift; sourceTree = "<group>"; };
+		795464F829092DD7006FC0FD /* KanarieTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = KanarieTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		795464FB29092DD7006FC0FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		795464FD29092DD7006FC0FD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		795464FF29092DD7006FC0FD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7954650229092DD7006FC0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7954650429092DDA006FC0FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7954650729092DDA006FC0FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7954650929092DDA006FC0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7954650E29092DDA006FC0FD /* KanarieTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanarieTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7954651229092DDA006FC0FD /* KanarieTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanarieTaskTests.swift; sourceTree = "<group>"; };
+		7954651429092DDA006FC0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7954651929092DDB006FC0FD /* KanarieTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KanarieTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		7954651D29092DDB006FC0FD /* KanarieTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KanarieTaskUITests.swift; sourceTree = "<group>"; };
+		7954651F29092DDB006FC0FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7954652E29092E62006FC0FD /* CustomTabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTabBarVC.swift; sourceTree = "<group>"; };
+		7954653829092FB7006FC0FD /* CustomSegmentedControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSegmentedControl.swift; sourceTree = "<group>"; };
+		7954654029093475006FC0FD /* TabBarVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarVC.swift; sourceTree = "<group>"; };
+		99F1A6FA2C63360109D9E01A /* Pods_KanarieTask_KanarieTaskUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KanarieTask_KanarieTaskUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF0BB327D8A835A1DB683128 /* Pods_KanarieTask.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_KanarieTask.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		C7FFC894AD89A001DDD6F6B9 /* Pods-KanarieTask.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanarieTask.release.xcconfig"; path = "Target Support Files/Pods-KanarieTask/Pods-KanarieTask.release.xcconfig"; sourceTree = "<group>"; };
+		D3E141684473D9AFAC1D7BF4 /* Pods-KanarieTask-KanarieTaskUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanarieTask-KanarieTaskUITests.release.xcconfig"; path = "Target Support Files/Pods-KanarieTask-KanarieTaskUITests/Pods-KanarieTask-KanarieTaskUITests.release.xcconfig"; sourceTree = "<group>"; };
+		FC19F833F93E111A7CA1C126 /* Pods-KanarieTaskTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-KanarieTaskTests.debug.xcconfig"; path = "Target Support Files/Pods-KanarieTaskTests/Pods-KanarieTaskTests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		795464F529092DD7006FC0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C0BCB4526C596ED767F6953 /* Pods_KanarieTask.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7954650B29092DDA006FC0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E2A5B6C342AB276C2225912F /* Pods_KanarieTaskTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7954651629092DDB006FC0FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F62D580F62F0720470F15070 /* Pods_KanarieTask_KanarieTaskUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		792CF5CB290AAE0D00DFEF8E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				792CF5E4290AC21F00DFEF8E /* KanarieEnergyData.swift */,
+				792CF5F2290AC25800DFEF8E /* KanarieEnergyDTO.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		792CF5CC290AAE2200DFEF8E /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				792CF637290ACA0900DFEF8E /* KanarieEnergyViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		792CF5CF290AB7FD00DFEF8E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				792CF5DE290AB8CB00DFEF8E /* HTTPClient */,
+				792CF5D0290AB80F00DFEF8E /* URLSessionHTTPClient */,
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		792CF5D0290AB80F00DFEF8E /* URLSessionHTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				792CF5D1290AB84400DFEF8E /* URLSessionHTTPClient.swift */,
+				792CF5D9290AB86200DFEF8E /* URLSessionHTTPClientError.swift */,
+			);
+			path = URLSessionHTTPClient;
+			sourceTree = "<group>";
+		};
+		792CF5DE290AB8CB00DFEF8E /* HTTPClient */ = {
+			isa = PBXGroup;
+			children = (
+				792CF5DF290AB8E700DFEF8E /* HTTPClient.swift */,
+			);
+			path = HTTPClient;
+			sourceTree = "<group>";
+		};
+		792CF5F7290AC27200DFEF8E /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				792CF5F8290AC29900DFEF8E /* KanarieEnergyError.swift */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		792CF611290AC4F400DFEF8E /* API */ = {
+			isa = PBXGroup;
+			children = (
+				792CF612290AC51600DFEF8E /* Environment.swift */,
+				792CF61A290AC53600DFEF8E /* KanarieEnergyEnvironment.swift */,
+				792CF620290AC55500DFEF8E /* KanarieEnergyAPI.swift */,
+				792CF628290AC58700DFEF8E /* KanarieEnergyAPI+MappingExtension.swift */,
+				792CF62D290AC5B200DFEF8E /* KanarieEnergyAPI+EnvironmenInstancesExtension.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		79316907290EDFF6009B3862 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				7954650129092DD7006FC0FD /* Main.storyboard */,
+				7954650629092DDA006FC0FD /* LaunchScreen.storyboard */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		79316908290EE039009B3862 /* Repositories */ = {
+			isa = PBXGroup;
+			children = (
+				792CF600290AC36500DFEF8E /* KanarieEnergyRepository.swift */,
+				792CF632290AC7AD00DFEF8E /* KanarieEnergyRemoteRepository.swift */,
+			);
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		79316909290EE066009B3862 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				795464FF29092DD7006FC0FD /* ViewController.swift */,
+				7954652E29092E62006FC0FD /* CustomTabBarVC.swift */,
+				7954653829092FB7006FC0FD /* CustomSegmentedControl.swift */,
+				7954654029093475006FC0FD /* TabBarVC.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		795464EF29092DD7006FC0FD = {
+			isa = PBXGroup;
+			children = (
+				795464FA29092DD7006FC0FD /* KanarieTask */,
+				7954651129092DDA006FC0FD /* KanarieTaskTests */,
+				7954651C29092DDB006FC0FD /* KanarieTaskUITests */,
+				795464F929092DD7006FC0FD /* Products */,
+				E1563DB3A75079B230B9E339 /* Pods */,
+				CB579544D258BDB72AC3FD98 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		795464F929092DD7006FC0FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				795464F829092DD7006FC0FD /* KanarieTask.app */,
+				7954650E29092DDA006FC0FD /* KanarieTaskTests.xctest */,
+				7954651929092DDB006FC0FD /* KanarieTaskUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		795464FA29092DD7006FC0FD /* KanarieTask */ = {
+			isa = PBXGroup;
+			children = (
+				7954650429092DDA006FC0FD /* Assets.xcassets */,
+				79316907290EDFF6009B3862 /* Base */,
+				792CF611290AC4F400DFEF8E /* API */,
+				792CF5F7290AC27200DFEF8E /* Errors */,
+				792CF5CF290AB7FD00DFEF8E /* Networking */,
+				792CF5CC290AAE2200DFEF8E /* ViewModels */,
+				792CF5CB290AAE0D00DFEF8E /* Models */,
+				79316908290EE039009B3862 /* Repositories */,
+				79316909290EE066009B3862 /* Views */,
+				795464FD29092DD7006FC0FD /* SceneDelegate.swift */,
+				795464FB29092DD7006FC0FD /* AppDelegate.swift */,
+				7954650929092DDA006FC0FD /* Info.plist */,
+			);
+			path = KanarieTask;
+			sourceTree = "<group>";
+		};
+		7954651129092DDA006FC0FD /* KanarieTaskTests */ = {
+			isa = PBXGroup;
+			children = (
+				7954651229092DDA006FC0FD /* KanarieTaskTests.swift */,
+				7954651429092DDA006FC0FD /* Info.plist */,
+			);
+			path = KanarieTaskTests;
+			sourceTree = "<group>";
+		};
+		7954651C29092DDB006FC0FD /* KanarieTaskUITests */ = {
+			isa = PBXGroup;
+			children = (
+				7954651D29092DDB006FC0FD /* KanarieTaskUITests.swift */,
+				7954651F29092DDB006FC0FD /* Info.plist */,
+			);
+			path = KanarieTaskUITests;
+			sourceTree = "<group>";
+		};
+		CB579544D258BDB72AC3FD98 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BF0BB327D8A835A1DB683128 /* Pods_KanarieTask.framework */,
+				99F1A6FA2C63360109D9E01A /* Pods_KanarieTask_KanarieTaskUITests.framework */,
+				335DD0AA13485BFFA20F0BE3 /* Pods_KanarieTaskTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		E1563DB3A75079B230B9E339 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				786233D9D105C041F9103C44 /* Pods-KanarieTask.debug.xcconfig */,
+				C7FFC894AD89A001DDD6F6B9 /* Pods-KanarieTask.release.xcconfig */,
+				215413BA37E2EABC29270F66 /* Pods-KanarieTask-KanarieTaskUITests.debug.xcconfig */,
+				D3E141684473D9AFAC1D7BF4 /* Pods-KanarieTask-KanarieTaskUITests.release.xcconfig */,
+				FC19F833F93E111A7CA1C126 /* Pods-KanarieTaskTests.debug.xcconfig */,
+				1A8D3F76E0030E8452AFABB1 /* Pods-KanarieTaskTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		795464F729092DD7006FC0FD /* KanarieTask */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7954652229092DDB006FC0FD /* Build configuration list for PBXNativeTarget "KanarieTask" */;
+			buildPhases = (
+				9985246AC220043369651DD7 /* [CP] Check Pods Manifest.lock */,
+				795464F429092DD7006FC0FD /* Sources */,
+				795464F529092DD7006FC0FD /* Frameworks */,
+				795464F629092DD7006FC0FD /* Resources */,
+				792090292D33B0100B1F615B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = KanarieTask;
+			productName = KanarieTask;
+			productReference = 795464F829092DD7006FC0FD /* KanarieTask.app */;
+			productType = "com.apple.product-type.application";
+		};
+		7954650D29092DDA006FC0FD /* KanarieTaskTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7954652529092DDB006FC0FD /* Build configuration list for PBXNativeTarget "KanarieTaskTests" */;
+			buildPhases = (
+				562DBC31EA55452EC43204E5 /* [CP] Check Pods Manifest.lock */,
+				7954650A29092DDA006FC0FD /* Sources */,
+				7954650B29092DDA006FC0FD /* Frameworks */,
+				7954650C29092DDA006FC0FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7954651029092DDA006FC0FD /* PBXTargetDependency */,
+			);
+			name = KanarieTaskTests;
+			productName = KanarieTaskTests;
+			productReference = 7954650E29092DDA006FC0FD /* KanarieTaskTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		7954651829092DDB006FC0FD /* KanarieTaskUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7954652829092DDB006FC0FD /* Build configuration list for PBXNativeTarget "KanarieTaskUITests" */;
+			buildPhases = (
+				DA4059F8B571A03ABB45B8CE /* [CP] Check Pods Manifest.lock */,
+				7954651529092DDB006FC0FD /* Sources */,
+				7954651629092DDB006FC0FD /* Frameworks */,
+				7954651729092DDB006FC0FD /* Resources */,
+				FB3558FF506475BE19FBFA11 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				7954651B29092DDB006FC0FD /* PBXTargetDependency */,
+			);
+			name = KanarieTaskUITests;
+			productName = KanarieTaskUITests;
+			productReference = 7954651929092DDB006FC0FD /* KanarieTaskUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		795464F029092DD7006FC0FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					795464F729092DD7006FC0FD = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					7954650D29092DDA006FC0FD = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 795464F729092DD7006FC0FD;
+					};
+					7954651829092DDB006FC0FD = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = 795464F729092DD7006FC0FD;
+					};
+				};
+			};
+			buildConfigurationList = 795464F329092DD7006FC0FD /* Build configuration list for PBXProject "KanarieTask" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 795464EF29092DD7006FC0FD;
+			productRefGroup = 795464F929092DD7006FC0FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				795464F729092DD7006FC0FD /* KanarieTask */,
+				7954650D29092DDA006FC0FD /* KanarieTaskTests */,
+				7954651829092DDB006FC0FD /* KanarieTaskUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		795464F629092DD7006FC0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7954650829092DDA006FC0FD /* LaunchScreen.storyboard in Resources */,
+				7954650529092DDA006FC0FD /* Assets.xcassets in Resources */,
+				7954650329092DD7006FC0FD /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7954650C29092DDA006FC0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7954651729092DDB006FC0FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		562DBC31EA55452EC43204E5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KanarieTaskTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		792090292D33B0100B1F615B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KanarieTask/Pods-KanarieTask-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KanarieTask/Pods-KanarieTask-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KanarieTask/Pods-KanarieTask-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9985246AC220043369651DD7 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KanarieTask-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DA4059F8B571A03ABB45B8CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-KanarieTask-KanarieTaskUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FB3558FF506475BE19FBFA11 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KanarieTask-KanarieTaskUITests/Pods-KanarieTask-KanarieTaskUITests-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-KanarieTask-KanarieTaskUITests/Pods-KanarieTask-KanarieTaskUITests-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-KanarieTask-KanarieTaskUITests/Pods-KanarieTask-KanarieTaskUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		795464F429092DD7006FC0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				792CF633290AC7AD00DFEF8E /* KanarieEnergyRemoteRepository.swift in Sources */,
+				792CF621290AC55500DFEF8E /* KanarieEnergyAPI.swift in Sources */,
+				792CF5D2290AB84400DFEF8E /* URLSessionHTTPClient.swift in Sources */,
+				792CF5E5290AC21F00DFEF8E /* KanarieEnergyData.swift in Sources */,
+				7954650029092DD7006FC0FD /* ViewController.swift in Sources */,
+				792CF613290AC51600DFEF8E /* Environment.swift in Sources */,
+				792CF5F3290AC25800DFEF8E /* KanarieEnergyDTO.swift in Sources */,
+				792CF61B290AC53600DFEF8E /* KanarieEnergyEnvironment.swift in Sources */,
+				792CF638290ACA0900DFEF8E /* KanarieEnergyViewModel.swift in Sources */,
+				792CF629290AC58700DFEF8E /* KanarieEnergyAPI+MappingExtension.swift in Sources */,
+				792CF5DA290AB86200DFEF8E /* URLSessionHTTPClientError.swift in Sources */,
+				795464FC29092DD7006FC0FD /* AppDelegate.swift in Sources */,
+				795464FE29092DD7006FC0FD /* SceneDelegate.swift in Sources */,
+				792CF5E0290AB8E700DFEF8E /* HTTPClient.swift in Sources */,
+				7954652F29092E62006FC0FD /* CustomTabBarVC.swift in Sources */,
+				7954654129093475006FC0FD /* TabBarVC.swift in Sources */,
+				792CF62E290AC5B200DFEF8E /* KanarieEnergyAPI+EnvironmenInstancesExtension.swift in Sources */,
+				792CF5F9290AC29900DFEF8E /* KanarieEnergyError.swift in Sources */,
+				792CF601290AC36500DFEF8E /* KanarieEnergyRepository.swift in Sources */,
+				7954653929092FB7006FC0FD /* CustomSegmentedControl.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7954650A29092DDA006FC0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7954651329092DDA006FC0FD /* KanarieTaskTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		7954651529092DDB006FC0FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7954651E29092DDB006FC0FD /* KanarieTaskUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		7954651029092DDA006FC0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 795464F729092DD7006FC0FD /* KanarieTask */;
+			targetProxy = 7954650F29092DDA006FC0FD /* PBXContainerItemProxy */;
+		};
+		7954651B29092DDB006FC0FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 795464F729092DD7006FC0FD /* KanarieTask */;
+			targetProxy = 7954651A29092DDB006FC0FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		7954650129092DD7006FC0FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7954650229092DD7006FC0FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7954650629092DDA006FC0FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7954650729092DDA006FC0FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7954652029092DDB006FC0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7954652129092DDB006FC0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7954652329092DDB006FC0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 786233D9D105C041F9103C44 /* Pods-KanarieTask.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GX94SK27T;
+				INFOPLIST_FILE = KanarieTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoviso.KanarieTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		7954652429092DDB006FC0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C7FFC894AD89A001DDD6F6B9 /* Pods-KanarieTask.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GX94SK27T;
+				INFOPLIST_FILE = KanarieTask/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoviso.KanarieTask;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		7954652629092DDB006FC0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = FC19F833F93E111A7CA1C126 /* Pods-KanarieTaskTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GX94SK27T;
+				INFOPLIST_FILE = KanarieTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoviso.KanarieTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanarieTask.app/KanarieTask";
+			};
+			name = Debug;
+		};
+		7954652729092DDB006FC0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1A8D3F76E0030E8452AFABB1 /* Pods-KanarieTaskTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GX94SK27T;
+				INFOPLIST_FILE = KanarieTaskTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoviso.KanarieTaskTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/KanarieTask.app/KanarieTask";
+			};
+			name = Release;
+		};
+		7954652929092DDB006FC0FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 215413BA37E2EABC29270F66 /* Pods-KanarieTask-KanarieTaskUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GX94SK27T;
+				INFOPLIST_FILE = KanarieTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoviso.KanarieTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KanarieTask;
+			};
+			name = Debug;
+		};
+		7954652A29092DDB006FC0FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D3E141684473D9AFAC1D7BF4 /* Pods-KanarieTask-KanarieTaskUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 4GX94SK27T;
+				INFOPLIST_FILE = KanarieTaskUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.neoviso.KanarieTaskUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = KanarieTask;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		795464F329092DD7006FC0FD /* Build configuration list for PBXProject "KanarieTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7954652029092DDB006FC0FD /* Debug */,
+				7954652129092DDB006FC0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7954652229092DDB006FC0FD /* Build configuration list for PBXNativeTarget "KanarieTask" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7954652329092DDB006FC0FD /* Debug */,
+				7954652429092DDB006FC0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7954652529092DDB006FC0FD /* Build configuration list for PBXNativeTarget "KanarieTaskTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7954652629092DDB006FC0FD /* Debug */,
+				7954652729092DDB006FC0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7954652829092DDB006FC0FD /* Build configuration list for PBXNativeTarget "KanarieTaskUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7954652929092DDB006FC0FD /* Debug */,
+				7954652A29092DDB006FC0FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 795464F029092DD7006FC0FD /* Project object */;
+}

@@ -1,0 +1,26 @@
+PODS:
+  - Charts (4.1.0):
+    - Charts/Core (= 4.1.0)
+  - Charts/Core (4.1.0):
+    - SwiftAlgorithms (~> 1.0)
+  - CustomizableTabBar (0.0.4)
+  - SwiftAlgorithms (1.0.0)
+
+DEPENDENCIES:
+  - Charts
+  - CustomizableTabBar
+
+SPEC REPOS:
+  trunk:
+    - Charts
+    - CustomizableTabBar
+    - SwiftAlgorithms
+
+SPEC CHECKSUMS:
+  Charts: 354f86803d11d9c35de280587fef50d1af063978
+  CustomizableTabBar: 7786fe55b9ab8a4bd1695e8fc87b677fa87ba656
+  SwiftAlgorithms: 38dda4731d19027fdeee1125f973111bf3386b53
+
+PODFILE CHECKSUM: a6c94532c84c95661959254bae28c4348098d444
+
+COCOAPODS: 1.11.3
